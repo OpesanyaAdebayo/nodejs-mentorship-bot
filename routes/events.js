@@ -25,7 +25,7 @@ router.post('/', function (req, res, next) {
   if (q.event.type === 'member_joined_channel') {
       let channel = q.event.channel;
       let user = q.event.user;
-      console.log("hi");
+    
       res.json({text: "hello!"});
       web.chat.postEphemeral({
           channel: channel,
