@@ -29,7 +29,7 @@ router.post('/', function (req, res, next) {
       res.json({text: "hello!"});
       web.chat.postEphemeral({
           channel: channel,
-          text: `Welcome <@${user}> :party:\nIt's great to have you here.\nPlease update your status to indicate if you applied as a mentor or mentee.\nThank you!`,
+          text: `Welcome <@${user}> :party:\nIt's great to have you here.\nPlease update your status to indicate if you applied as a mentor or mentee.\nYou can also update your profile picture. It would be nice to see a picture of you. :blush:\nThank you!`,
           user: user
         });
   }
