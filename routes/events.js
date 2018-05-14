@@ -6,6 +6,7 @@ const {
 } = require('@slack/client');
 
 // completed app
+// connected to slack
 const token = process.env.BOT_TOKEN;
 const web = new WebClient(token);
 
